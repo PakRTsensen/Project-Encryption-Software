@@ -1,0 +1,96 @@
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style>
+		ul {list-style-type: none;}
+		div.delimiter {width:100%; height:4px; font-size:1px; border-top: 1px solid #66583c; border-bottom: 1px solid #66583c; background-color: #c4b79b;}
+		div.logo {padding:10px; background-image:url('icon.png'); background-repeat:no-repeat; background-position:left center; text-align: center; width: 100%;}
+		div.about {text-align: center; padding-left: 90px; padding-bottom:5px;}
+		a {color: #098572; font-weight: bold; text-decoration: underline;}
+	</style>
+	<title>Paranoia Text Encryption for PC</title>
+</head>
+<body style="margin:0; padding:0">
+	<div class="delimiter"></div>
+	<div style="padding-left:10px; background-color:#eeeeee; color:#000000;">
+		<div class="logo">
+			<div class="about">
+				<b><font size='4'>!app_name! [version !version!]</font></b><br/>
+				!first_line!
+				!second_line!
+				Copyright © !year! Paranoia Works (MIT License)<br/>
+				<font size='2'>This product includes software developed by:<br/>
+				The Legion Of The Bouncy Castle (http://www.bouncycastle.org) (MIT)<br/>
+				Morten Nobel (https://blog.nobel-joergensen.com) (BSD 3-Clause)<br/>
+				7-Zip (https://www.7-zip.org) (Public domain)<br/>
+				---<br/>
+				Steganographic feature (F5 algorithm) is under LGPL license<br/>
+				(separated project F5Steg in source code)<br/>
+				(derived from https://code.google.com/archive/p/f5-steganography)
+				</font>
+			</div>
+		</div>
+	</div>
+	<div class="delimiter"></div>
+	<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b><font size='5'>Inicio Rápido</font></b><br/><br/>
+		<b>Cifrado:</b><br/>
+		1. Establece una contraseña.<br/>
+		2. Escribe o pega texto en el área de "Texto Sin Cifrar" (borde verde).<br/>
+		3. Presiona el botón "Cifrar".<br/>
+		4. El texto cifrado aparecerá en el área de "Texto Cifrado" (borde rojo).<br/>
+		5. Copia el texto cifrado y úsalo donde sea necesario, o guárdalo en un archivo para uso posterior.<br/>
+		<br/>
+		<b>Descifrado:</b><br/>
+		1. Establece una contraseña.<br/>
+		2. Escribe o pega un texto cifrado en el área de "Texto Cifrado" (borde rojo).<br/>
+		3. Presiona el botón "Descifrar". (<i>Nota: El <b>algoritmo de descifrado</b> se detecta automáticamente</i>)<br/>
+		4. El texto descifrado aparecerá en el área de "Texto Sin Cifrar" (borde verde).<br/>
+		5. Copia el texto y úsalo donde sea necesario.
+	</div>
+	<div class="delimiter"></div>
+	<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b><font size='5'>Esteganografía</font></b><br/><br/>
+		<ul style="padding-right:6px; padding-top:6px;">
+			<li>Se incluye una función esteganográfica que oculta el texto dentro de una imagen (JPEG). Un algoritmo esteganográfico, el <b>algoritmo F5</b>, se utiliza en combinación con el algoritmo de cifrado simétrico seleccionado para crear un esteganograma final (imagen JPEG).</li>
+			<li style="color:red;">• <b>NOTA IMPORTANTE: </b><i>Algunas aplicaciones de comunicación (como WhatsApp, Viber, Messenger, etc.) pueden redimensionar o recomprimir las imágenes para reducir el ancho de banda. Los datos ocultos pueden corromperse durante este proceso porque JPG utiliza compresión con pérdida. Por favor, prueba todos tus flujos de trabajo y casos de uso previstos para verificar el proceso.</i></li>
+		</ul>
+		<br/>
+		<b>Hacer Esteganograma:</b><br/>
+		1. Establece una contraseña.<br/>
+		2. Escribe o pega el texto que quieres cifrar (y ocultar) en el área de "Texto Sin Cifrar" (borde verde).<br/>
+		3. Presiona el botón "Más" (situado a la derecha del medio, representado por tres puntos).<br/>
+		4. Elige "Cifrar + Hacer Esteganograma".<br/>
+		5. Selecciona una imagen portadora (jpg, png, bmp).<br/>
+		6. Presiona el botón "Continuar".<br/>
+		7. El esteganograma se creará y guardará.<br/>
+		<br/>
+		<b>Descifrar desde Esteganograma:</b><br/>
+		1. Establece una contraseña.<br/>
+		2. Presiona el botón "Más" (situado a la derecha del medio, representado por tres puntos).<br/>
+		3. Elige "Descifrar (Esteganograma)".<br/>
+		4. Selecciona un esteganograma.<br/>
+		5. El texto descifrado aparecerá en el área de "Texto Sin Cifrar" (borde verde).<br/>
+		6. Copia el texto y úsalo donde quieras.<br/>
+	</div>
+	<div class="delimiter"></div>
+	<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b><font size='5'>Más</font></b><br/>
+		<ul style="color: #098572; padding-right:6px; padding-top:6px;">
+			<li>• <a href="https://paranoiaworks.mobi/ptepc/">Página Principal de la Aplicación</a></li>
+			<li>• <a href="https://paranoiaworks.mobi/rd/004.htm">Video Tutorial</a></li>
+			<li>• <a href="https://paranoiaworks.mobi/pte/specifications.html">Especificaciones de Formatos</a></li>
+		</ul>
+	</div>
+	<div class="delimiter"></div>
+	<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b><font size='5'>Otras Plataformas</font></b><br/>
+		<ul style="color: #098572; padding-right:6px; padding-top:6px;">
+			<li>• <a href="https://paranoiaworks.mobi/sse/">Secret Space Encryptor para Android</a></li>
+			<li>• <a href="https://paranoiaworks.mobi/pte/es/">Paranoia Text Encryption para iOS</a></li>
+			<li>• <a href="https://pteo.paranoiaworks.mobi">Versión Web (AES del lado del cliente)</a></li>
+		</ul>
+	</div>
+
+</body>
+</html>

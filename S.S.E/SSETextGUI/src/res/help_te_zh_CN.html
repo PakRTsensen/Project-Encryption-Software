@@ -1,0 +1,96 @@
+<html lang="zh-Hans">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style>
+		ul {list-style-type: none;}
+		div.delimiter {width:100%; height:4px; font-size:1px; border-top: 1px solid #66583c; border-bottom: 1px solid #66583c; background-color: #c4b79b;}
+		div.logo {padding:10px; background-image:url('icon.png'); background-repeat:no-repeat; background-position:left center; text-align: center; width: 100%;}
+		div.about {text-align: center; padding-left: 90px; padding-bottom:5px;}
+		a {color: #098572; font-weight: bold; text-decoration: underline;}
+	</style>
+	<title>Paranoia Text Encryption for PC</title>
+</head>
+<body style="margin:0; padding:0; font-family: Arial Unicode MS;">
+	<div class="delimiter"></div>
+	<div style="padding-left:10px; background-color:#eeeeee; color:#000000;">
+		<div class="logo">
+			<div class="about">
+				<b><font size='4'>!app_name! [version !version!]</font></b><br/>
+				!first_line!
+				!second_line!
+				Copyright © !year! Paranoia Works (MIT License)<br/>
+				<font size='2'>This product includes software developed by:<br/>
+				The Legion Of The Bouncy Castle (http://www.bouncycastle.org) (MIT)<br/>
+				Morten Nobel (https://blog.nobel-joergensen.com) (BSD 3-Clause)<br/>
+				7-Zip (https://www.7-zip.org/) (Public domain)<br/>
+				---<br/>
+				Steganographic feature (F5 algorithm) is under LGPL license<br/>
+				(separated project F5Steg in source code)<br/>
+				(derived from https://code.google.com/archive/p/f5-steganography)
+				</font>
+			</div>
+		</div>
+	</div>
+	<div class="delimiter"></div>
+	<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+	<b><font size='4'>快速开始</b><br/><br/>
+	<b>加密：</b><br/>
+	1. 设置一个密码。<br/>
+	2. 将文本写入或粘贴到“未加密文本”区域（绿色边框）。<br/>
+	3. 点击“加密”按钮。<br/>
+	4. 加密后的文本将出现在“已加密文本”区域（红色边框）。<br/>
+	5. 复制加密的文本并在需要的地方使用，或将其保存到文件中以备后用。<br/>
+	<br/>
+	<b>解密：</b><br/>
+	1. 设置一个密码。<br/>
+	2. 将加密的文本写入或粘贴到“已加密文本”区域（红色边框）。<br/>
+	3. 点击“解密”按钮。（<i>注意：<b>解密算法</b>会被自动检测</i>）<br/>
+	4. 解密后的文本将出现在“未加密文本”区域（绿色边框）。<br/>
+	5. 复制文本并在需要的地方使用。
+	</div>
+	<div class="delimiter"></div>
+	<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b><font size='4'>隐写术</b><br/><br/>
+		<ul style="padding-right:6px; padding-top:6px;">
+			<li>隐写术功能包含在内，可以在图像（JPEG）中隐藏文本。隐写术算法，即<b>F5 算法</b>，与所选的对称密码算法结合使用，创建最终的隐写图（JPEG 图像）。</li>
+			<li style="color:red;">• <b>重要提示：</b>一些通信应用程序（如 WhatsApp、Viber、Messenger 等）可能会调整图像的大小或重新压缩图像以减少带宽。在此过程中，因为 JPG 使用有损压缩，隐藏的数据可能会被破坏。请测试您所有的预期工作流程和用例以验证这个过程。</li>
+		</ul>
+		<br/>
+		<b>制作隐写图：</b><br/>
+		1. 设置一个密码。<br/>
+		2. 将你想要加密（并隐藏）的文本写入或粘贴到“未加密文本”区域（绿色边框）。<br/>
+		3. 点击位于中右部的“更多”按钮（由三个点表示）。<br/>
+		4. 选择“加密并制作隐写图”。<br/>
+		5. 选择一个载体图像（jpg，png，bmp）。<br/>
+		6. 点击“继续”按钮。<br/>
+		7. 隐写图将被创建并保存。<br/>
+		<br/>
+		<b>从隐写图解密：</b><br/>
+		1. 设置一个密码。<br/>
+		2. 点击位于中右部的“更多”按钮（由三个点表示）。<br/>
+		3. 选择“从隐写图解密”。<br/>
+		4. 选择一个隐写图。<br/>
+		5. 解密后的文本将出现在“未加密文本”区域（绿色边框）。<br/>
+		6. 复制文本并在你想要的地方使用。<br/>
+	</div>
+	<div class="delimiter"></div>
+	<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b><font size='4'>更多</b><br/>
+		<ul style="color: #098572; padding-right:6px; padding-top:6px;">
+			<li>• <a href="https://paranoiaworks.mobi/ptepc/">应用主页</a></li>
+			<li>• <a href="https://paranoiaworks.mobi/rd/004.htm">视频教程</a></li>
+			<li>• <a href="https://paranoiaworks.mobi/pte/specifications.html">格式规范</a></li>
+		</ul>
+	</div>
+	<div class="delimiter"></div>
+		<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b><font size='4'>其他平台</b><br/>
+		<ul style="color: #098572; padding-right:6px; padding-top:6px;">
+			<li>• <a href="https://paranoiaworks.mobi/sse/">安卓版 Secret Space Encryptor</a></li>
+			<li>• <a href="https://paranoiaworks.mobi/pte/zh-Hans/">iOS 版 Paranoia Text Encryption</a></li>
+			<li>• <a href="https://pteo.paranoiaworks.mobi">网页版（客户端 AES）</a></li>
+		</ul>
+	</div>
+
+</body>
+</html>

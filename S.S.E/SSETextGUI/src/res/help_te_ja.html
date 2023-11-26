@@ -1,0 +1,96 @@
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style>
+		ul {list-style-type: none;}
+		div.delimiter {width:100%; height:4px; font-size:1px; border-top: 1px solid #66583c; border-bottom: 1px solid #66583c; background-color: #c4b79b;}
+		div.logo {padding:10px; background-image:url('icon.png'); background-repeat:no-repeat; background-position:left center; text-align: center; width: 100%;}
+		div.about {text-align: center; padding-left: 90px; padding-bottom:5px;}
+		a {color: #098572; font-weight: bold; text-decoration: underline;}
+	</style>
+	<title>Paranoia Text Encryption for PC</title>
+</head>
+<body style="margin:0; padding:0; font-family: Arial Unicode MS;">
+	<div class="delimiter"></div>
+	<div style="padding-left:10px; background-color:#eeeeee; color:#000000;">
+		<div class="logo">
+			<div class="about">
+				<b><font size='4'>!app_name! [version !version!]</font></b><br/>
+				!first_line!
+				!second_line!
+				Copyright © !year! Paranoia Works (MIT License)<br/>
+				<font size='2'>This product includes software developed by:<br/>
+				The Legion Of The Bouncy Castle (http://www.bouncycastle.org) (MIT)<br/>
+				Morten Nobel (https://blog.nobel-joergensen.com) (BSD 3-Clause)<br/>
+				7-Zip (https://www.7-zip.org) (Public domain)<br/>
+				---<br/>
+				Steganographic feature (F5 algorithm) is under LGPL license<br/>
+				(separated project F5Steg in source code)<br/>
+				(derived from https://code.google.com/archive/p/f5-steganography)
+				</font>
+			</div>
+		</div>
+	</div>
+	<div class="delimiter"></div>
+	<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b>クイックスタート</b><br/><br/>
+		<b>暗号化：</b><br/>
+		1. パスワードを設定します。<br/>
+		2. 「未暗号化テキスト」エリア（緑色のボーダー）にテキストを書き込むか貼り付けます。<br/>
+		3. 「暗号化」ボタンを押します。<br/>
+		4. 暗号化されたテキストが「暗号化テキスト」エリア（赤色のボーダー）に表示されます。<br/>
+		5. 暗号化されたテキストをコピーし、必要な場所で使用するか、後で使用するためにファイルに保存します。<br/>
+		<br/>
+		<b>復号化：</b><br/>
+		1. パスワードを設定します。<br/>
+		2. 暗号化されたテキストを「暗号化テキスト」エリア（赤色のボーダー）に書き込むか貼り付けます。<br/>
+		3. 「復号化」ボタンを押します。(<i>注：<b>復号化アルゴリズム</b>は自動的に検出されます</i>)<br/>
+		4. 復号化されたテキストが「未暗号化テキスト」エリア（緑色のボーダー）に表示されます。<br/>
+		5. テキストをコピーし、必要な場所で使用します。
+	</div>
+	<div class="delimiter"></div>
+	<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b>ステガノグラフィー</b><br/><br/>
+		<ul style="padding-right:6px; padding-top:6px;">
+			<li>画像（JPEG）内にテキストを隠蔽するステガノグラフィー機能が含まれています。ステガノグラフィーのアルゴリズムである<b>F5アルゴリズム</b>は、選択した対称暗号アルゴリズムと組み合わせて使用され、最終的なステガノグラム（JPEG画像）を作成します。</li>
+			<li style="color:red;">• <b>重要な注意：</b>一部の通信アプリケーション（WhatsApp、Viber、Messengerなど）では、画像のサイズを変更したり圧縮したりして帯域幅を削減することができます。JPGはロス型圧縮を使用しているため、このプロセス中に隠蔽されたデータが破損する可能性があります。すべての予定されたワークフローと使用例をテストし、プロセスを確認してください。</li>
+		</ul>
+		<br/>
+		<b>ステガノグラム作成：</b><br/>
+		1. パスワードを設定します。<br/>
+		2. 「未暗号化テキスト」エリア（緑色のボーダー）に暗号化（及び隠蔽）したいテキストを書き込むか貼り付けます。<br/>
+		3. 「さらに」ボタン（中央右に位置し、3つのドットで表される）を押します。<br/>
+		4. 「暗号化してステガノグラムを作成」を選択します。<br/>
+		5. キャリア画像（jpg、png、bmp）を選択します。<br/>
+		6. 「続行」ボタンを押します。<br/>
+		7. ステガノグラムが作成され保存されます。<br/>
+		<br/>
+		<b>ステガノグラムからの復号化：</b><br/>
+		1. パスワードを設定します。<br/>
+		2. 「さらに」ボタン（中央右に位置し、3つのドットで表される）を押します。<br/>
+		3. 「ステガノグラムから復号化」を選択します。<br/>
+		4. ステガノグラムを選択します。<br/>
+		5. 復号化されたテキストが「未暗号化テキスト」エリア（緑色のボーダー）に表示されます。<br/>
+		6. テキストをコピーし、好きな場所で使用します。<br/>
+	</div>
+	<div class="delimiter"></div>
+	<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b>さらに</b><br/>
+		<ul style="color: #098572; padding-right:6px; padding-top:6px;">
+			<li>• <a href="https://paranoiaworks.mobi/ptepc/">アプリのホームページ</a></li>
+			<li>• <a href="https://paranoiaworks.mobi/rd/004.htm">ビデオチュートリアル</a></li>
+			<li>• <a href="https://paranoiaworks.mobi/pte/specifications.html">フォーマット仕様</a></li>
+		</ul>
+	</div>
+	<div class="delimiter"></div>
+		<div style="padding-left:6px; padding-right:6px; padding-top:6px; padding-bottom:10px;">
+		<b>他のプラットフォーム</b><br/>
+		<ul style="color: #098572; padding-right:6px; padding-top:6px;">
+			<li>• <a href="https://paranoiaworks.mobi/sse/">Secret Space Encryptor for Android</a></li>
+			<li>• <a href="https://paranoiaworks.mobi/pte/ja/">Paranoia Text Encryption for iOS</a></li>
+			<li>• <a href="https://pteo.paranoiaworks.mobi">Webバージョン（クライアントサイドAES）</a></li>
+		</ul>
+	</div>
+
+</body>
+</html>
